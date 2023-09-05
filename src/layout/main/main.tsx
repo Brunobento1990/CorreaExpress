@@ -11,7 +11,8 @@ export function MainLayout(props: OutletProps){
         <Box
             component="main"
             width="100%"
-            height="100vh"
+            height="100%"
+            sx={{ minHeight: "100vh" }}
         >
             {props.children}
             <NavCustom/>

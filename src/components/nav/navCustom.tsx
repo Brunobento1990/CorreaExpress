@@ -5,9 +5,14 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { useNavigate } from "react-router-dom";
+import { AppTheme } from "../../hooks/app-theme";
 
 export default function NavCustom() {
+
   const [value, setValue] = useState(0);
+  const navigate = useNavigate();
+  const theme = AppTheme();
 
   return (
     <Paper
@@ -16,15 +21,33 @@ export default function NavCustom() {
     >
       <BottomNavigation
         showLabels
-        sx={{ backgroundColor: "#dad3d3"}}
+        sx={{ backgroundColor: theme.color.cinza }}
         value={value}
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction label="Início" icon={<HomeIcon />} />
-        <BottomNavigationAction label="Contatos" icon={<ContactPhoneIcon />} />
-        <BottomNavigationAction label="Endereço" icon={<LocationOnIcon />} />
+        <BottomNavigationAction
+          label="Início"
+          icon={<HomeIcon
+            sx={{ color: theme.color.laranja }}
+          />}
+          onClick={() => navigate("/")}
+        />
+        <BottomNavigationAction
+          label="Contatos"
+          icon={<ContactPhoneIcon
+            sx={{ color: theme.color.laranja }}
+          />}
+          onClick={() => navigate("/contatos")}
+        />
+        <BottomNavigationAction
+          label="Endereço"
+          icon={<LocationOnIcon
+            sx={{ color: theme.color.laranja }}
+          />}
+          onClick={() => navigate("/localizacao")}
+        />
       </BottomNavigation>
     </Paper>
   );
