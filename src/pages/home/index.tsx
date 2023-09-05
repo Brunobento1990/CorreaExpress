@@ -3,6 +3,7 @@ import Stepper from '../../components/stepper';
 import { AppTheme } from '../../hooks/app-theme';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Link } from 'react-router-dom';
+import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 
 export function Home() {
 
@@ -15,7 +16,7 @@ export function Home() {
             justifyContent="center"
             flexDirection="column"
             gap={6}
-            sx={{ marginBottom: "64px" }}
+            sx={{ marginBottom: "75px" }}
         >
             <Stepper />
             <Box
@@ -51,7 +52,66 @@ export function Home() {
                     E aos sabados das 9:00 as 16:00
                 </Typography>
             </Box>
+            <Box
+                marginTop={5}
+                display='flex'
+                alignItems='start'
+                justifyItems='center'
+                flexDirection='column'
+                width='90%'
+                component={Paper}
+                gap={2}
+                padding={2}
+            >
 
+                <Box
+                    display='flex'
+                    alignItems='center'
+                    justifyContent='center'
+                    flexDirection='row'
+                    gap={5}
+                >
+                    <DeliveryDiningIcon />
+                    <Typography
+                        variant='h5'
+                        fontFamily={theme.font.principal}
+                        fontWeight={600}
+                        color={theme.color.preto}
+                    >
+                        Serviços
+                    </Typography>
+                </Box>
+                <Box
+                    display='flex'
+                    alignItems='center'
+                    justifyContent='center'
+                    flexDirection='row'
+                    gap={5}
+                >
+                    <Typography
+                        fontFamily={theme.font.principal}
+                        fontWeight={600}
+                        color={theme.color.preto}
+                    >
+                        Delivery
+                    </Typography>
+                </Box>
+                <Box
+                    display='flex'
+                    alignItems='center'
+                    justifyContent='center'
+                    flexDirection='row'
+                    gap={5}
+                >
+                    <Typography
+                        fontFamily={theme.font.principal}
+                        fontWeight={600}
+                        color={theme.color.preto}
+                    >
+                        Entrega de documentos, pequenas mercadorias e entragas rápidas
+                    </Typography>
+                </Box>
+            </Box>
             <Box
                 height="100%"
                 width="90%"

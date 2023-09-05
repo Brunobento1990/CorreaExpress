@@ -2,18 +2,81 @@ import { Box, Paper, Typography } from '@mui/material';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import HomeIcon from '@mui/icons-material/Home';
+import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 import { AppTheme } from '../../hooks/app-theme';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Link } from 'react-router-dom';
 
 export function Contatos() {
+
+    const theme = AppTheme();
+
     return (
         <Box
             width='100%'
             display='flex'
             alignItems='center'
             justifyContent='center'
+            flexDirection='column'
         >
+            <Box
+                marginTop={10}
+                display='flex'
+                alignItems='start'
+                justifyItems='center'
+                flexDirection='column'
+                width='90%'
+                component={Paper}
+                gap={2}
+                padding={2}
+            >
+
+                <Box
+                    display='flex'
+                    alignItems='center'
+                    justifyContent='center'
+                    flexDirection='row'
+                    gap={5}
+                >
+                    <DeliveryDiningIcon />
+                    <Typography
+                        variant='h5'
+                        fontFamily={theme.font.principal}
+                        fontWeight={600}
+                        color={theme.color.preto}
+                    >
+                        Serviços
+                    </Typography>
+                </Box>
+                <Box
+                    display='flex'
+                    alignItems='center'
+                    justifyContent='center'
+                    flexDirection='row'
+                    gap={5}
+                >
+                    <Typography
+                        fontFamily={theme.font.principal}
+                        fontWeight={600}
+                        color={theme.color.preto}
+                    >
+                        Delivery
+                    </Typography>
+                </Box>
+                <Box
+                    display='flex'
+                    alignItems='center'
+                    justifyContent='center'
+                    flexDirection='row'
+                    gap={5}
+                >
+                    <Typography
+                        fontFamily={theme.font.principal}
+                        fontWeight={600}
+                        color={theme.color.preto}
+                    >
+                        Entrega de documentos, pequenas mercadorias e entragas rápidas
+                    </Typography>
+                </Box>
+            </Box>
             <Box
                 marginTop={10}
                 display='flex'
