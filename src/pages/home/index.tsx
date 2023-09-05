@@ -61,7 +61,7 @@ export function Home() {
       >
         Serviços
       </Typography>
-      <List component={Paper} sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
+      <List component={Paper} sx={{ width: "100%", maxWidth: 500, bgcolor: "background.paper" }}>
         <ListItem>
           <ListItemAvatar>
             <Avatar>
