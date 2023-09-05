@@ -43,7 +43,7 @@ export function Home() {
           fontWeight={600}
           color={theme.color.preto}
         >
-          Entregas em Itajaí em região
+          Entregas em Itajaí e região
         </Typography>
 
         <Typography fontFamily={theme.font.principal} color={theme.color.preto}>
