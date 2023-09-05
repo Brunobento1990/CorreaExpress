@@ -11,33 +11,34 @@ import ImageListCustom from "../../components/listImage/imageList";
 import { diarinho } from "../../components/banners/imgClientes/diarinho";
 import { unica } from "../../components/banners/imgClientes/unica";
 import { farmagnus } from "../../components/banners/imgClientes/farmagnus";
+import { Link } from "react-router-dom";
 
 const imgs = [
   {
-    img:eficacia,
-    title:"Eficácia"
+    img: eficacia,
+    title: "Eficácia",
   },
   {
-    img:ortomedica,
-    title:"Ortomédica"
+    img: ortomedica,
+    title: "Ortomédica",
   },
   {
-    img:materiaprima,
-    title:"Matéria prima suplementos"
+    img: materiaprima,
+    title: "Matéria prima suplementos",
   },
   {
-    img:diarinho,
-    title:"Diarinho"
+    img: diarinho,
+    title: "Diarinho",
   },
   {
-    img:unica,
-    title:"Única lingerie"
+    img: unica,
+    title: "Única lingerie",
   },
   {
-    img:farmagnus,
-    title:"Drogarias Farmagnus"
-  }
-]
+    img: farmagnus,
+    title: "Drogarias Farmagnus",
+  },
+];
 
 export function Contatos() {
   const theme = AppTheme();
@@ -78,13 +79,17 @@ export function Contatos() {
           gap={5}
         >
           <AttachEmailIcon />
-          <Typography
-            color={theme.color.preto}
-            fontWeight={500}
-            fontFamily={theme.font.principal}
+          <Link
+            to="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=correayuri2023@gmail.com"
           >
-            Email : correayuri2023@gmail.com
-          </Typography>
+            <Typography
+              color={theme.color.preto}
+              fontWeight={500}
+              fontFamily={theme.font.principal}
+            >
+              Email : correayuri2023@gmail.com
+            </Typography>
+          </Link>
         </Box>
         <Box
           display="flex"
@@ -94,13 +99,15 @@ export function Contatos() {
           gap={5}
         >
           <ContactPhoneIcon />
-          <Typography
-            color={theme.color.preto}
-            fontWeight={500}
-            fontFamily={theme.font.principal}
-          >
-            Telefone : 55 47 9933-0022
-          </Typography>
+          <Link to="https://api.whatsapp.com/send?phone=554799330022">
+            <Typography
+              color={theme.color.preto}
+              fontWeight={500}
+              fontFamily={theme.font.principal}
+            >
+              WhatsApp : 47 9933-0022
+            </Typography>
+          </Link>
         </Box>
         <Box
           display="flex"
@@ -110,13 +117,15 @@ export function Contatos() {
           gap={5}
         >
           <InstagramIcon />
-          <Typography
-            color={theme.color.preto}
-            fontWeight={500}
-            fontFamily={theme.font.principal}
-          >
-            instagram : @correa_express
-          </Typography>
+          <Link to="https://instagram.com/correaexpress_?igshid=NjIwNzIyMDk2Mg==">
+            <Typography
+              color={theme.color.preto}
+              fontWeight={500}
+              fontFamily={theme.font.principal}
+            >
+              instagram : @correa_express
+            </Typography>
+          </Link>
         </Box>
         <Box
           display="flex"
@@ -126,28 +135,30 @@ export function Contatos() {
           gap={5}
         >
           <HomeIcon />
-          <Typography
-            color={theme.color.preto}
-            fontWeight={500}
-            fontFamily={theme.font.principal}
+          <Link
+            to="https://goo.gl/maps/8w83GpyNiBhSVCfr9"
           >
-            Endereço : R. Fábio Cesário Pereira, 345 - São Judas, Itajaí - SC,
-            88303-490, Brasil
-          </Typography>
+            <Typography
+              color={theme.color.preto}
+              fontWeight={500}
+              fontFamily={theme.font.principal}
+            >
+              Endereço : R. Fábio Cesário Pereira, 345 - São Judas, Itajaí - SC,
+              88303-490, Brasil
+            </Typography>
+          </Link>
         </Box>
       </Box>
       <Typography
-            color={theme.color.preto}
-            variant="h4"
-            marginTop={3}
-            fontWeight={600}
-            fontFamily={theme.font.principal}
-          >
-            Nossos clientes
-          </Typography>
-      <ImageListCustom
-        data={imgs}
-      />
+        color={theme.color.preto}
+        variant="h4"
+        marginTop={3}
+        fontWeight={600}
+        fontFamily={theme.font.principal}
+      >
+        Nossos clientes
+      </Typography>
+      <ImageListCustom data={imgs} />
     </Box>
   );
 }
