@@ -47,68 +47,12 @@ export function Home() {
         </Typography>
 
         <Typography fontFamily={theme.font.principal} color={theme.color.preto}>
-          De segunda a sexta das 8:00 as 19:00
+          De segunda a sexta das 8:00 às 19:00
         </Typography>
         <Typography fontFamily={theme.font.principal} color={theme.color.preto}>
-          E aos sabados das 9:00 as 16:00
+          E aos sabados das 9:00 às 16:00
         </Typography>
       </Box>
-      {/* <Box
-        marginTop={5}
-        display="flex"
-        alignItems="start"
-        justifyItems="center"
-        flexDirection="column"
-        width="90%"
-        component={Paper}
-        gap={2}
-        padding={2}
-      >
-        <Box
-          display="flex"
-          alignItems="start"
-          justifyContent="center"
-          flexDirection="column"
-          gap={3}
-        >
-          <Typography
-            variant="h5"
-            fontFamily={theme.font.principal}
-            fontWeight={600}
-            color={theme.color.preto}
-          >
-            Serviços
-          </Typography>
-          <Typography
-            fontFamily={theme.font.principal}
-            fontWeight={600}
-            color={theme.color.preto}
-          >
-            Delivery
-          </Typography>
-          <Typography
-            fontFamily={theme.font.principal}
-            fontWeight={600}
-            color={theme.color.preto}
-          >
-            Entrega de documentos
-          </Typography>
-          <Typography
-            fontFamily={theme.font.principal}
-            fontWeight={600}
-            color={theme.color.preto}
-          >
-            Pequenas mercadorias
-          </Typography>
-          <Typography
-            fontFamily={theme.font.principal}
-            fontWeight={600}
-            color={theme.color.preto}
-          >
-            Entregas rápidas
-          </Typography>
-        </Box>
-      </Box> */}
       <Typography
         variant="h5"
         fontFamily={theme.font.principal}
@@ -124,7 +68,7 @@ export function Home() {
               <DocumentScannerIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Entreda de documentos" />
+          <ListItemText primary="Entrega de documentos" />
         </ListItem>
         <ListItem>
           <ListItemAvatar>
@@ -140,7 +84,7 @@ export function Home() {
               <InventoryIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Pequenas mercadoris" />
+          <ListItemText primary="Pequenas mercadorias" />
         </ListItem>
         <ListItem>
           <ListItemAvatar>

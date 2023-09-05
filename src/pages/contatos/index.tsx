@@ -4,6 +4,40 @@ import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import HomeIcon from "@mui/icons-material/Home";
 import { AppTheme } from "../../hooks/app-theme";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { ortomedica } from "../../components/banners/imgClientes/ortomedica";
+import { eficacia } from "../../components/banners/imgClientes/eficacia";
+import { materiaprima } from "../../components/banners/imgClientes/materiaprima";
+import ImageListCustom from "../../components/listImage/imageList";
+import { diarinho } from "../../components/banners/imgClientes/diarinho";
+import { unica } from "../../components/banners/imgClientes/unica";
+import { farmagnus } from "../../components/banners/imgClientes/farmagnus";
+
+const imgs = [
+  {
+    img:eficacia,
+    title:"Eficácia"
+  },
+  {
+    img:ortomedica,
+    title:"Ortomédica"
+  },
+  {
+    img:materiaprima,
+    title:"Matéria prima suplementos"
+  },
+  {
+    img:diarinho,
+    title:"Diarinho"
+  },
+  {
+    img:unica,
+    title:"Única lingerie"
+  },
+  {
+    img:farmagnus,
+    title:"Drogarias Farmagnus"
+  }
+]
 
 export function Contatos() {
   const theme = AppTheme();
@@ -102,6 +136,18 @@ export function Contatos() {
           </Typography>
         </Box>
       </Box>
+      <Typography
+            color={theme.color.preto}
+            variant="h4"
+            marginTop={3}
+            fontWeight={600}
+            fontFamily={theme.font.principal}
+          >
+            Nossos clientes
+          </Typography>
+      <ImageListCustom
+        data={imgs}
+      />
     </Box>
   );
 }
