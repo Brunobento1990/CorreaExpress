@@ -41,13 +41,13 @@ export default function NavCustom() {
           />}
           onClick={() => navigate("/contatos")}
         />
-        <BottomNavigationAction
+        {/* <BottomNavigationAction
           label="Endereço"
           icon={<LocationOnIcon
             sx={{ color: theme.color.laranja }}
           />}
           onClick={() => navigate("/localizacao")}
-        />
+        /> */}
       </BottomNavigation>
     </Paper>
   );
