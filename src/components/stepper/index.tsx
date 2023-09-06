@@ -23,6 +23,7 @@ export default function Stepper() {
     return (
         <Box
             component="img"
+            alt="entrega"
             sx={{
                 height: 350,
                 maxHeight: lgUp ? 350 : 300,
