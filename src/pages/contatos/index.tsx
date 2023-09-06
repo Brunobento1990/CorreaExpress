@@ -17,26 +17,32 @@ const imgs = [
   {
     img: eficacia,
     title: "Eficácia",
+    alt:"entrega eficacia"
   },
   {
     img: ortomedica,
     title: "Ortomédica",
+    alt:"entrega ortomedica"
   },
   {
     img: materiaprima,
     title: "Matéria prima suplementos",
+    alt:"entrega materia prima"
   },
   {
     img: diarinho,
     title: "Diarinho",
+    alt:"entrega diarinho"
   },
   {
     img: unica,
     title: "Única lingerie",
+    alt:"entrega langerie"
   },
   {
     img: farmagnus,
     title: "Drogarias Farmagnus",
+    alt:"entrega farmagnus"
   },
 ];
 
